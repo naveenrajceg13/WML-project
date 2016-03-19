@@ -1,0 +1,38 @@
+extern function helloWorld()
+{
+       var c=0;
+       var b=0;
+       var i;
+       var j;
+	var s="notes";
+	 var n = WMLBrowser.getVar("word"); 
+	 WMLBrowser.setVar("message", "Hello World. Welcome to our WMLScript tutorial.");
+		for(i=0;i<String.length(s);i++)
+		{
+			if(String.charAt(s,i)==String.charAt(n,i))
+				b++;
+			for(j=0;j<String.length(s);j++)
+			{
+				if(String.charAt(s,i)==String.charAt(n,j))
+				{
+					c++;
+					break;
+				}
+			}
+		}
+  if(String.compare(s,n)==0)
+           {
+            WMLBrowser.go("#card5");
+            WMLBrowser.refresh();
+          }
+   else
+      {
+	var cat="Cat:"+String.toString(c);
+	var bull="Bull:"+String.toString(b);
+	Dialogs.alert(cat+" "+bull);
+	WMLBrowser.setVar("cat",cat);
+	WMLBrowser.setVar("bull",bull);
+	WMLBrowser.go("#card4");
+ WMLBrowser.refresh();
+     }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+                     "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+     <card title="card1" id="card1">
+  <center><b>plz login </b></center>
+<form action="http://localhost/wml/login.php" method="post" >
+    <p>username: <input name="username" type="text"/></p>
+    <p>password: <input name="password" type="password"/></p>
+ <p align="right"><img src="login.jpg" alt="game image" width="150" height="150"/></p>
+     <p align="center"><input type="submit" value="Submit"/></p>
+     
+            <do type="button" label="register">
+	 <go href="#card2" />
+   </do>
+	
+         </form>
+ 
+            
+</card>
+<card title="card2" id="card2">
+<p align="center"><img src="join.jpg" alt="game image" width="150" height="150"/></p>
+<form action="http://localhost/wml/reg.php" method="post" >
+   <p>username: <input name="user" type="text" /> </p>
+   <p>pass:<input name="pass" type="text" /></p>
+   <p align="center"><input type="submit" value="Submit"/></p>
+</form>
+</card>
+</wml>

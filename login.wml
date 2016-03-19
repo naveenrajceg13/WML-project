@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+                     "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+<card title="card1" id="card1">
+<p align="center"><b>CAT AND BULL GAME </b></p>
+<pre>
+<p align="center"><img src="cat.jpg" alt="game image" width="200" height="200"/> <img src="bull.jpg" alt="game image" width="200" height="200"/></p></pre>
+<p align="center"><a href="#card3">play game</a></p> 
+<p align="center"><a href="#card2">Developers</a> </p>
+<p align="center"><a href="#card6">Instructions</a></p>
+
+</card>
+<card title="card2" id="card2">
+<b>Developers</b>
+<p align="left">Naveen Raj <img src="naveen.jpg" alt="game image" width="100" height="100"/></p>
+<p align="center">Yuvaraj  <img src="yuvi.jpg" alt="game image" width="100" height="100"/></p>
+<p align="right">Sudarson <img src="susan.jpg" alt="game image" width="100" height="100"/></p>
+<p>
+<a href="#card1">back</a> </p>
+</card>
+
+<card title="card3" id="card3">               
+<b>guess the word</b>
+
+                 
+<p>guess 5 letter word : <input name="word" type="text"/></p>
+
+               
+<do type="accept" label="Guess">
+
+<go href="EX.wmls#helloWorld()"/>
+               </do>
+</br>
+           <do type="button" label="reset">
+<refresh>
+<setvar name="word" value=""/>
+</refresh>
+</do>
+<a href="#card1">back</a>
+	</card>
+	<card title="card4" id="card4">
+		<p align="center"><img src="cat.jpg"     alt="game image" width="100" height="100"/></br>$cat<br/></p>
+		<p align="center"><img src="bull.jpg"    alt="game image" width="100" height="100"/></br>$bull</p>
+            <p><a href="#card3"><img src="tryagain.jpg"  alt="game image" width="100" height="100"/></a></p>
+
+	</card>
+<card title="card5" id="card5">
+		<p align="center"> you won !!! </p>
+                <p align="center"><img src="win.jpg" alt="game image" width="200" height="200"/></p>
+               
+	</card>
+<card title="card6" id="card6">
+<p align="left"><img src="cat.jpg" alt="game image" width="100" height="100"/></p>
+<p align="center">
+                                              <pre>
+                                               <b>     1) This is the cat and bull game 
+                                                   2) This game helps to increase the english vocabulary
+                                                   3) eg :first string is vinoth
+                                                      This is 5 letter word
+                                                      u guess as vianhh
+                                                      cat Value is 3
+                                                      bull Value is 3
+                                                      cat-letters at the same position 
+                                                      bull-letters as that in the given word </b>
+                                              </pre>
+</p>
+<p>
+<a href="#card1">back</a> </p>
+<p align="right"><img src="bull.jpg" alt="game image" width="200" height="200"/></p>
+</card>
+        
+
+</wml>
